@@ -1,0 +1,14 @@
+{% extends "layout.html" %}
+
+{% block title %}My Account{% endblock %}
+
+{% block main %}
+<form action="/myaccount" method="post">
+    <div class="form-group">
+        <p>Cash Deposit:</p><input autocomplete="off" class="form-control" name="amount" placeholder="Amount in USD" type="float">
+    </div>
+    <div class="form-group">
+        <button class="btn btn-primary" type="submite" value="Add">Add</button>
+    </div>
+</form>
+{% endblock %}
